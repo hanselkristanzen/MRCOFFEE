@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR.COFFEE - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://placehold.co/32x32/8B4513/FFFFFF?text=MC&font=Inter" type="image/png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">MR.COFFEE</a>
+                <nav class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html" class="current-page">Menu</a>
+                    <a href="rewards.html">Rewards</a>
+                    <a href="about.html">About Us</a>
+                    <a href="order.html" class="order-now-button">Order Now</a>
+                    <a href="order.html" class="cart-icon-link" aria-label="View your cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 
+                                     0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 
+                                     2-2-.9-2-2-2zM7.16 14.26l.94-2.09h7.45c.75 
+                                     0 1.41-.41 1.75-1.03l3.58-6.49a1 
+                                     1 0 0 0-.87-1.48H5.21l-.94-2H1v2h2l3.6 
+                                     7.59-1.35 2.44c-.17.31-.25.65-.25 
+                                     1 0 1.1.9 2 2 2h12v-2H7.42a.25.25 
+                                     0 0 1-.26-.26z"/>
+                          </svg>
+                          
+                        <span id="cartIconCount" class="cart-item-count-badge">0</span>
+                    </a>
+                </nav>
+                <button id="mobile-menu-button" class="mobile-menu-toggle-button" aria-label="Open menu">
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="current-page-mobile">Menu</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="about.html">About Us</a>
+            <a href="order.html" class="order-now-button-mobile">Order Now</a>
+        </nav>
+    </header>
+
+    <main class="menu-page-main">
+        <div class="container">
+            <h1 class="section-title page-title">Our Menu</h1>
+
+            <div id="menu-bar">
+                <button class="menu-filter-button active-filter" data-filter="all">All Products</button>
+                <button class="menu-filter-button" data-filter="espresso">Espresso</button>
+                <button class="menu-filter-button" data-filter="frappe">Frappe</button>
+                <button class="menu-filter-button" data-filter="brewed">Brewed Coffee</button>
+                <button class="menu-filter-button" data-filter="bread">Breads & Pastries</button>
+                <button class="menu-filter-button" data-filter="tea">Teas</button>
+            </div>
+
+            <div id="menu-list" class="products-grid four-cols">
+                </div>
+
+            <div class="text-center-container">
+                <a href="order.html" class="proceed-to-order-link">Proceed to Order</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+             <div>
+                <a href="index.html" class="footer-logo-link">MR.COFFEE</a>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About Us</a>
+                <a href="order.html">Order Now</a>
+            </nav>
+            <p class="footer-info">&copy; <span id="currentYear"></span> MR.COFFEE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="addonSelectionModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="addonModalTitle" class="modal-title">Select Add-ons for <span id="addonProductName"></span></h3>
+                <button id="closeAddonModalButton" class="modal-close-button" aria-label="Close add-on selection modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="addonProductPrice" class="addon-modal-product-price"></p>
+                <div id="addonOptionsContainer" class="checkbox-group addon-checkbox-group">
+                    </div>
+                <div class="addon-modal-total">
+                    Total for this item: <strong id="currentAddonItemTotal">$0.00</strong>
+                </div>
+                <button id="confirmAddonsButton" class="submit-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="customAlertModal" class="modal-overlay hidden">
+        <div class="modal-content alert-modal-content">
+            <h3 id="customAlertTitle" class="modal-title">Alert</h3>
+            <p id="customAlertMessage" class="modal-body">This is an alert message.</p>
+            <button id="customAlertCloseButton" class="alert-modal-ok-button">OK</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

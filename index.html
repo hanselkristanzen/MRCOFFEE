@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR.COFFEE - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://placehold.co/32x32/8B4513/FFFFFF?text=MC&font=Inter" type="image/png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">MR.COFFEE</a>
+                <nav class="desktop-nav">
+                    <a href="index.html" class="current-page">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="rewards.html">Rewards</a>
+                    <a href="about.html">About Us</a>
+                    <a href="order.html" class="order-now-button">Order Now</a>
+                    <a href="order.html" class="cart-icon-link" aria-label="View your cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 
+                                     0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 
+                                     2-2-.9-2-2-2zM7.16 14.26l.94-2.09h7.45c.75 
+                                     0 1.41-.41 1.75-1.03l3.58-6.49a1 
+                                     1 0 0 0-.87-1.48H5.21l-.94-2H1v2h2l3.6 
+                                     7.59-1.35 2.44c-.17.31-.25.65-.25 
+                                     1 0 1.1.9 2 2 2h12v-2H7.42a.25.25 
+                                     0 0 1-.26-.26z"/>
+                          </svg>
+                          
+                        <span id="cartIconCount" class="cart-item-count-badge">0</span>
+                    </a>
+                </nav>
+                <button id="mobile-menu-button" class="mobile-menu-toggle-button" aria-label="Open menu">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden">
+            <a href="index.html" class="current-page-mobile">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="about.html">About Us</a>
+            <a href="order.html" class="order-now-button-mobile">Order Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" style="background-image: url('img/coffee-beans.jpeg');">
+            <div class="hero-overlay">
+                <h1 class="hero-title">Where Every Sip Brews a Connection</h1>
+                <p class="hero-subtitle">Crafted with passion, brewed to perfection. Discover your moment with MR.COFFEE</p>
+                <a href="menu.html" class="hero-cta-button">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <section class="most-ordered-section bg-orange-100-section">
+            <div class="container">
+                <h2 class="section-title">Our Most Ordered Coffees</h2>
+                <div class="products-grid five-cols">
+                    <div class="product-card">
+                        <img src="img/espresso.jpeg" alt="Classic Espresso">
+                        <div class="product-card-content">
+                            <h3>Classic Espresso</h3>
+                            <p class="price">$2.50</p>
+                            <div style="flex-grow: 1;"></div>
+                            <a href="menu.html#espresso" class="view-details-button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/caramel-frappe.jpg" alt="Caramel Frappe">
+                        <div class="product-card-content">
+                            <h3>Caramel Frappe</h3>
+                            <p class="price">$4.75</p>
+                            <div style="flex-grow: 1;"></div>
+                            <a href="menu.html#frappe" class="view-details-button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/pour-over.jpeg" alt="Pour Over Brew">
+                        <div class="product-card-content">
+                            <h3>Pour Over Brew</h3>
+                            <p class="price">$3.50</p>
+                            <div style="flex-grow: 1;"></div>
+                            <a href="menu.html#brewed" class="view-details-button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/latte.jpg" alt="Iced Latte">
+                        <div class="product-card-content">
+                            <h3>Iced Latte</h3>
+                            <p class="price">$4.25</p>
+                            <div style="flex-grow: 1;"></div>
+                            <a href="menu.html#espresso" class="view-details-button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/mocha.jpg" alt="Mocha Delight">
+                        <div class="product-card-content">
+                            <h3>Mocha Delight</h3>
+                            <p class="price">$5.00</p>
+                            <div style="flex-grow: 1;"></div>
+                            <a href="menu.html#frappe" class="view-details-button">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rewards-promo-section bg-white-section">
+            <div class="container">
+                <div class="promo-box">
+                    <img src="img/promo-one.jpg" alt="Special Reward">
+                    <div class="promo-box-content">
+                        <h2>Exclusive Rewards Await!</h2>
+                        <p class="subtitle">Join MR.COFFEE Rewards today!</p>
+                        <p class="description">Get a <span class="highlight">Free Drink on Fridays</span> when you sign up for our rewards program. Enjoy exclusive deals, birthday treats, and points on every purchase. Don't miss out on the perks!</p>
+                        <a href="rewards.html" class="cta-button">Discover Rewards</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="founder-section bg-orange-100-section">
+            <div class="container">
+                <div class="founder-box">
+                    <img src="img/susanto-liman.png" alt="Susanto Liman - CEO" class="founder-image">
+                    <div class="founder-box-content">
+                        <h2>Meet Our Founder & CEO</h2>
+                        <p class="founder-title">Susanto Liman</p>
+                        <p class="description">"MR.COFFEE started from a simple dream: to create a space where every cup of coffee sparks joy and connection. We believe in quality, community, and the art of a perfect brew. It's more than coffee; it's an experience we love to share."</p>
+                        <a href="about.html" class="cta-button">Learn Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <a href="index.html" class="footer-logo-link">MR.COFFEE</a>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About Us</a>
+                <a href="order.html">Order Now</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </nav>
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> MR.COFFEE. All rights reserved.</p>
+                <p>Icon Residence, Kemanggisan, Jakarta Barat</p>
+                <p>Contact: 0822-2350-8383 | info@mr.coffee.com</p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2.188a.84.84 0 01.37.027 10.01 10.01 0 013.344.805c1.07.384 1.96.908 2.748 1.695.788.788 1.311 1.677 1.695 2.748.532 1.11.778 2.264.805 3.344a.84.84 0 01-.027.37c-.035.285-.083.568-.143.847a10.01 10.01 0 01-.805 3.344c-.384 1.07-.908 1.96-1.695 2.748-.788.788-1.677 1.311-2.748 1.695a10.01 10.01 0 01-3.344.805c-.28.06-.562.108-.847.143a.84.84 0 01-.37.027 10.01 10.01 0 01-3.344-.805c-1.07-.384-1.96-.908-2.748-1.695-.788-.788-1.311-1.677-1.695-2.748a10.01 10.01 0 01-.805-3.344c-.06-.28-.108-.562-.143-.847a.84.84 0 01.027-.37c.035-.285.083-.568.143-.847a10.01 10.01 0 01.805-3.344c.384-1.07.908-1.96 1.695-2.748.788-.788 1.677-1.311 2.748-1.695A10.01 10.01 0 0111.63 2.23a.84.84 0 01.37-.027c.285.035.568.083.847.143h.001zm-.847 1.55a8.45 8.45 0 00-2.83.683c-.895.323-1.645.763-2.303 1.422-.658.658-1.1 1.408-1.422 2.302a8.45 8.45 0 00-.683 2.83c-.05.236-.088.476-.112.718a.84.84 0 00.023.313c.027.218.065.435.112.65.23.99.588 1.914 1.054 2.736.466.822.99 1.512 1.748 2.07.758.558 1.61.938 2.568 1.14.957.201 1.978.201 2.936 0 .958-.202 1.81-.582 2.568-1.14.758-.558 1.282-1.248 1.748-2.07.466-.822.824-1.746 1.054-2.736.047-.215.085-.432.112-.65a.84.84 0 00.023-.313c-.024-.242-.062-.482-.112-.718a8.45 8.45 0 00-.683-2.83c-.323-.895-.763-1.645-1.422-2.303-.658-.658-1.408-1.1-2.302-1.422a8.45 8.45 0 00-2.83-.683c-.236-.05-.476-.088-.718-.112a.84.84 0 00-.313.023c-.218.027-.435.065-.65.112h-.001zM12 7.004a5 5 0 100 10 5 5 0 000-10zm0 8.182a3.182 3.182 0 110-6.364 3.182 3.182 0 010 6.364zM16.949 7.866a1.136 1.136 0 100-2.273 1.136 1.136 0 000 2.273z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

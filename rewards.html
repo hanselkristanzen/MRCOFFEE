@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR.COFFEE - Rewards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://placehold.co/32x32/8B4513/FFFFFF?text=MC&font=Inter" type="image/png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">MR.COFFEE</a>
+                <nav class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="rewards.html" class="current-page">Rewards</a>
+                    <a href="about.html">About Us</a>
+                    <a href="order.html" class="order-now-button">Order Now</a>
+                    <a href="order.html" class="cart-icon-link" aria-label="View your cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 
+                                     0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 
+                                     2-2-.9-2-2-2zM7.16 14.26l.94-2.09h7.45c.75 
+                                     0 1.41-.41 1.75-1.03l3.58-6.49a1 
+                                     1 0 0 0-.87-1.48H5.21l-.94-2H1v2h2l3.6 
+                                     7.59-1.35 2.44c-.17.31-.25.65-.25 
+                                     1 0 1.1.9 2 2 2h12v-2H7.42a.25.25 
+                                     0 0 1-.26-.26z"/>
+                          </svg>
+                          
+                        <span id="cartIconCount" class="cart-item-count-badge">0</span>
+                    </a>
+                </nav>
+                <button id="mobile-menu-button" class="mobile-menu-toggle-button" aria-label="Open menu">
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="rewards.html" class="current-page-mobile">Rewards</a>
+            <a href="about.html">About Us</a>
+            <a href="order.html" class="order-now-button-mobile">Order Now</a>
+        </nav>
+    </header>
+
+    <main class="rewards-page-main">
+        <div class="container">
+            <h1 class="section-title page-title">MR.COFFEE Rewards</h1>
+
+            <section class="rewards-download-section">
+                <h2>Get the Free <b>MR.COFFEE</b> App!</h2>
+                <p>Unlock exclusive rewards, order ahead, and pay seamlessly with our mobile app. Download it today and start earning!</p>
+                <div class="app-download-buttons">
+                    <a href="https://www.apple.com/id/app-store/" class="app-store-button">
+                        <img src="img/app-store-logo.png" alt="App Store Icon">
+                        Download on App Store
+                    </a>
+                    <a href="https://play.google.com/store/games" class="google-play-button">
+                         <img src="img/play-store-logo.webp" alt="Google Play Icon">
+                         Get it on Google Play
+                    </a>
+                </div>
+            </section>
+
+            <section class="promotions-section">
+                <h2>Current Promotions</h2>
+                <div class="products-grid"> <div class="product-card promo-card"> <img src="img/promo1.png" alt="Free Drink Friday">
+                        <div class="product-card-content">
+                            <h3>Free Drink Friday</h3>
+                            <p class="description">Start your weekend right! Get any medium-sized drink on us every Friday when you use the MR.COFFEE app.</p>
+                            <button class="claim-reward-button reward-button">Claim Reward</button>
+                        </div>
+                    </div>
+                    <div class="product-card promo-card">
+                        <img src="img/promo2.png" alt="20% Off Pastries">
+                        <div class="product-card-content">
+                            <h3>20% Off Pastries</h3>
+                            <p class="description">Sweeten your day! Enjoy a 20% discount on all freshly baked pastries with any coffee purchase. App users only.</p>
+                            <button class="claim-reward-button reward-button">Claim Reward</button>
+                        </div>
+                    </div>
+                    <div class="product-card promo-card">
+                        <img src="img/promo3.png" alt="Loyalty Points Boost">
+                        <div class="product-card-content">
+                            <h3>Loyalty Points Boost</h3>
+                            <p class="description">Earn double points on all orders placed through the app this month! Faster rewards, happier you.</p>
+                            <button class="claim-reward-button reward-button">Claim Reward</button>
+                        </div>
+                    </div>
+                    <div class="product-card promo-card">
+                        <img src="img/promo4.png" alt="Birthday Special">
+                        <div class="product-card-content">
+                            <h3>Birthday Special</h3>
+                            <p class="description">Happy Birthday from MR.COFFEE! Enjoy a free coffee and a slice of cake on your special day. Sign up in the app.</p>
+                            <button class="claim-reward-button reward-button">Claim Reward</button>
+                        </div>
+                    </div>
+                    <div class="product-card promo-card">
+                        <img src="img/promo5.png" alt="Refer a Friend">
+                        <div class="product-card-content">
+                            <h3>Refer a Friend Bonus</h3>
+                            <p class="description">Share the love! Refer a friend to the MR.COFFEE app, and you both get $5 off your next order.</p>
+                            <button class="claim-reward-button reward-button">Claim Reward</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+             <div>
+                <a href="index.html" class="footer-logo-link">MR.COFFEE</a>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About Us</a>
+                <a href="order.html">Order Now</a>
+            </nav>
+            <p class="footer-info">&copy; <span id="currentYear"></span> MR.COFFEE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="appDownloadModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Download Our App!</h3>
+                <button id="closeModalButton" class="modal-close-button" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>To claim this reward and enjoy more exclusive benefits, please download the MR.COFFEE mobile app.</p>
+                <div class="app-download-buttons modal-buttons-column">
+                     <a href="https://www.apple.com/id/app-store/" class="app-store-button">
+                        <img src="img/app-store-logo.png" alt="App Store Icon">
+                        App Store
+                    </a>
+                    <a href="https://play.google.com/store/games" class="google-play-button">
+                         <img src="img/play-store-logo.webp" alt="Google Play Icon">
+                         Google Play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="customAlertModal" class="modal-overlay hidden">
+        <div class="modal-content alert-modal-content">
+            <h3 id="customAlertTitle" class="modal-title">Alert</h3>
+            <p id="customAlertMessage" class="modal-body">This is an alert message.</p>
+            <button id="customAlertCloseButton" class="alert-modal-ok-button">OK</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

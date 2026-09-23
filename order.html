@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR.COFFEE - Order Now</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://placehold.co/32x32/8B4513/FFFFFF?text=MC&font=Inter" type="image/png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">MR.COFFEE</a>
+                <nav class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="rewards.html">Rewards</a>
+                    <a href="about.html">About Us</a>
+                    <a href="order.html" class="order-now-button current-page">Order Now</a>
+                    <a href="order.html" class="cart-icon-link" aria-label="View your cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 
+                                     0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 
+                                     2-2-.9-2-2-2zM7.16 14.26l.94-2.09h7.45c.75 
+                                     0 1.41-.41 1.75-1.03l3.58-6.49a1 
+                                     1 0 0 0-.87-1.48H5.21l-.94-2H1v2h2l3.6 
+                                     7.59-1.35 2.44c-.17.31-.25.65-.25 
+                                     1 0 1.1.9 2 2 2h12v-2H7.42a.25.25 
+                                     0 0 1-.26-.26z"/>
+                          </svg>
+                          
+                        <span id="cartIconCount" class="cart-item-count-badge">0</span>
+                    </a>
+                </nav>
+                 <button id="mobile-menu-button" class="mobile-menu-toggle-button" aria-label="Open menu">
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="about.html">About Us</a>
+            <a href="order.html" class="order-now-button-mobile current-page-mobile">Order Now</a>
+        </nav>
+    </header>
+
+    <main class="order-page-main">
+        <div class="container">
+            <h1 class="section-title page-title">Place Your Order</h1>
+
+            <div class="order-form-container">
+                <div class="order-summary-section">
+                    <h2 class="section-title" style="font-size: 1.75rem; margin-bottom: 1.5rem;">Your Cart</h2>
+                    <div id="cartItemsListContainer">
+                        </div>
+                    <div class="cart-total-summary">
+                        <p>Items Subtotal: <strong id="cartSubtotalDisplay">$0.00</strong></p>
+                    </div>
+                </div>
+                <form id="orderForm" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Full Name">
+                        <p class="error-message hidden" id="nameError">Name is required.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        <p class="error-message hidden" id="emailError">Valid email is required (e.g., name@domain.com).</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="082223508383">
+                        <p class="error-message hidden" id="phoneError">Phone number must be 10-13 digits and contain only numbers.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="form-label">Delivery Address</label>
+                        <textarea id="address" name="address" rows="3" required placeholder="Kemanggisan, Jakarta Barat"></textarea>
+                        <p class="error-message hidden" id="addressError">Address is required.</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Delivery Option</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="deliveryOption" value="standard">
+                                <span>Standard Delivery (30-50 minutes)</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="deliveryOption" value="express">
+                                <span>Express Delivery (10-20 minutes)</span>
+                            </label>
+                        </div>
+                         <p class="error-message hidden" id="deliveryError">Please select a delivery option.</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="paymentMethod" class="form-label">Payment Method</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="credit_card">Credit Card</option>
+                            <option value="QRIS">QRIS</option>
+                            <option value="bank_transfer">Bank Transfer</option>
+                        </select>
+                        <p class="error-message hidden" id="paymentError">Please select a payment method.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="totalPrice" class="form-label">Total Price</label>
+                        <input type="text" id="totalPrice" name="totalPrice" readonly value="$0.00">
+                    </div>
+
+                    <div>
+                        <button type="submit" class="submit-button">Place Order</button>
+                    </div>
+                </form>
+                <div id="formSuccessMessage" class="form-success-message hidden">
+                    Your order has been placed successfully! Thank you for choosing MR.COFFEE.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+             <div>
+                <a href="index.html" class="footer-logo-link">MR.COFFEE</a>
+            </div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About Us</a>
+                <a href="order.html">Order Now</a>
+            </nav>
+            <p class="footer-info">&copy; <span id="currentYear"></span> MR.COFFEE. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <div id="customAlertModal" class="modal-overlay hidden">
+        <div class="modal-content alert-modal-content">
+            <h3 id="customAlertTitle" class="modal-title">Alert</h3>
+            <p id="customAlertMessage" class="modal-body">This is an alert message.</p>
+            <button id="customAlertCloseButton" class="alert-modal-ok-button">OK</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
